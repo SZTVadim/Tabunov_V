@@ -6,7 +6,6 @@
 # - целое число 42
 # - число с точкой 3.14
 # - список [1, 2, 3]
-from dataclasses import replace
 
 a = "Привет"
 b = 42
@@ -134,7 +133,7 @@ print(b)
 fruits = ["яблоко"]
 fruits.append("банан")
 fruits.extend(["апельсин", "груша"])
-fruits.insert(1,"виноград")
+fruits.insert(1, "виноград")
 print(fruits)
 
 # ============================================
