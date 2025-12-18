@@ -8,10 +8,10 @@
 # Затем найдите минимальное и максимальное значение в этом списке.
 # Выведите оба результата.
 
-# list_1 = [x ** 3 for x in range(1, 8)]
-# print(list_1)
-# print(min(list_1))
-# print(max(list_1))
+list_1 = [x ** 3 for x in range(1, 8)]
+print(list_1)
+print(min(list_1))
+print(max(list_1))
 
 # Задача 2:
 # Дан список чисел: [5, 12, 8, 15, 3, 20, 7, 18, 9, 11]
@@ -19,10 +19,10 @@
 # Затем найдите сумму всех этих чисел с помощью функции sum().
 # Выведите результат.
 
-# numbers = [5, 12, 8, 15, 3, 20, 7, 18, 9, 11]
-# new_list = [x for x in numbers if x > 10]
-# print(new_list)
-# print(sum(new_list))
+numbers = [5, 12, 8, 15, 3, 20, 7, 18, 9, 11]
+new_list = [x for x in numbers if x > 10]
+print(new_list)
+print(sum(new_list))
 
 # Задача 3:
 # Дан список названий городов: ["москва", "санкт-петербург", "казань"]
