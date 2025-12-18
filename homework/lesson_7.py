@@ -8,7 +8,7 @@
 # Затем найдите минимальное и максимальное значение в этом списке.
 # Выведите оба результата.
 
-list_1 = [x ** 3 for x in range(1, 8)]
+list_1 = [x ** 3 for x in range(1, 9)]
 print(list_1)
 print(min(list_1))
 print(max(list_1))
