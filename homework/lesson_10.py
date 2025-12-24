@@ -16,7 +16,7 @@ fruits.update(["груша", "виноград"])
 print(fruits)
 fruits.discard("банан")
 print(fruits)
-fruits.discard("киви") # ничего не происходит
+# fruits.discard("киви") # ничего не происходит
 # fruits.remove("киви") # мы получаем ошибку KeyError
 new_fruits = fruits.pop()
 print(new_fruits)
