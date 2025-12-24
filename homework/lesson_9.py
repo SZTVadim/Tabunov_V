@@ -4,7 +4,6 @@
 """
 
 # ЗАДАНИЕ 1: Работа со словарями и перебор элементов
-
 # Создайте словарь с информацией о студенте:
 # - имя: "Иван"
 # - возраст: 20
@@ -22,15 +21,14 @@ student = {
     "well": 2,
     "city": "Москва"
 }
-# # print(student.keys())
-# # print(student.values())
-# for key, values in student.items():
-#     print(f"Ключ: {key}, Значение: {values}")
-# for values in student.values():
-#     print(f"Значение: {values}")
+print(student.keys())
+print(student.values())
+for key, values in student.items():
+    print(f"Ключ: {key}, Значение: {values}")
+for values in student.values():
+    print(f"Значение: {values}")
 
 # ЗАДАНИЕ 2: Удаление элементов и генератор словарей
-
 # Дан словарь цен на фрукты:
 # prices = {"яблоко": 50, "банан": 30, "апельсин": 40, "груша": 35, "виноград": 60}
 #
@@ -39,16 +37,15 @@ student = {
 # 3. Создайте новый словарь с теми же фруктами, но с ценами со скидкой 10%
 # 4. Выведите результат
 
-# prices = {"яблоко": 50, "банан": 30, "апельсин": 40, "груша": 35, "виноград": 60}
-# # del prices["груша"]
-# # print(prices)
-# # removed_key = prices.pop("виноград")
-# # print(removed_key)
-# discounted_prices = {fruit: price * 0.9 for fruit, price in prices.items()}
-# print(discounted_prices)
+prices = {"яблоко": 50, "банан": 30, "апельсин": 40, "груша": 35, "виноград": 60}
+del prices["груша"]
+print(prices)
+removed_key = prices.pop("виноград")
+print(removed_key)
+discounted_prices = {fruit: price * 0.9 for fruit, price in prices.items()}
+print(discounted_prices)
 
 # ЗАДАНИЕ 3: Объединение словарей
-
 # У вас есть два словаря:
 # student1 = {"имя": "Иван", "возраст": 20, "курс": 2}
 # student2 = {"имя": "Мария", "возраст": 21, "город": "Санкт-Петербург"}
