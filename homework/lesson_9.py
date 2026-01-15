@@ -38,12 +38,12 @@ for values in student.values():
 # 4. Выведите результат
 
 prices = {"яблоко": 50, "банан": 30, "апельсин": 40, "груша": 35, "виноград": 60}
+discounted_prices = {fruit: int(price * 0.9) for fruit, price in prices.items()}
+print(discounted_prices)
 del prices["груша"]
 print(prices)
 removed_key = prices.pop("виноград")
 print(removed_key)
-discounted_prices = {fruit: price * 0.9 for fruit, price in prices.items()}
-print(discounted_prices)
 
 # ЗАДАНИЕ 3: Объединение словарей
 # У вас есть два словаря:
@@ -57,8 +57,10 @@ print(discounted_prices)
 
 student1 = {"имя": "Иван", "возраст": 20, "курс": 2}
 student2 = {"имя": "Мария", "возраст": 21, "город": "Санкт-Петербург"}
+
 student1.update(student2)
 print(student1)
-student3 = student1 | student2
 print(student2)
+student3 = {"имя": "Иван", "возраст": 20, "курс": 2}
+student3.update(student2)
 print(student3)
