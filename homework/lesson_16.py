@@ -14,12 +14,12 @@ class Book:
         self.author = author
         self.pages = pages
 
-
     def get_info(self):
         return f"Книга '{self.title}', Автор {self.author}, {self.pages} стр."
 
     def is_long(self):
         return True if self.pages > 300 else False
+
 
 book1 = Book("Гарри потер", "Некая женщина", 470)
 book2 = Book("Война и мир", "Лев Толстой", 1225)
@@ -42,7 +42,6 @@ class BankAccount:
         self.owner = owner
         self.balance = balance
 
-
     def deposit(self, amount):
         self.balance += amount
         print(f"Пополнение: {amount}. Новый баланс: {self.balance}")
@@ -58,6 +57,7 @@ class BankAccount:
 
     def get_balance(self):
         return self.balance
+
 
 my_account = BankAccount("Вадим", 1000)
 my_account.deposit(500)
