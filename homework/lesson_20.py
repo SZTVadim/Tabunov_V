@@ -13,7 +13,7 @@ data_post = {
     "tags": [
         {
             "id": 0,
-            "name": "Bim"
+            "name": "Bim1"
         }
     ],
     "status": "available"
