@@ -39,7 +39,7 @@ class Book:
     def price(self, value):
         if value < 0:
             print("Ошибка: цена не может быть отрицательной!")
-        elif value > 100:
+        elif value > 10000:
             print("Ошибка: максимальная цена 10000 рублей!")
         else:
             self.__price = value
