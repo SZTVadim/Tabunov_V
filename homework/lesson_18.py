@@ -30,7 +30,7 @@ class Zoo:
         self.name = name
         self.__animals = []
 
-    def add_animal(self, animal):
+    def add_animal(self, animal: Animal):
         self.__animals.append(animal)
 
     def get_animals_count(self):
@@ -39,9 +39,9 @@ class Zoo:
     def get_animals(self):
         return self.__animals
 
+    def animal_sound(self, animal: Animal):
+        animal.make_sound()
 
-def animal_sound(animal):
-    animal.make_sound()
 
 # Это полиморфизм потому-что мы вызываем одну и ту же функцию у кошки и собаки
 
@@ -49,6 +49,7 @@ def animal_sound(animal):
 dog1 = Dog("Бобик", 3)
 dog2 = Dog("Шарик", 5)
 cat1 = Cat("Мурка", 2)
+
 zoo = Zoo("Городской зоопарк")
 
 zoo.add_animal(dog1)
@@ -58,7 +59,7 @@ zoo.add_animal(cat1)
 print("Количество животных в зоопарке:", zoo.get_animals_count())
 
 for animal in zoo.get_animals():
-    animal_sound(animal)
+    zoo.animal_sound(animal)
 
 # 11) Попробуйте создать объект Animal() напрямую
 # объясните в комментарии, что произошло и почему
