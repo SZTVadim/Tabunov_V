@@ -29,7 +29,6 @@ headers_get = {"accept": "application/json"}
 response_get = requests.get(f"{BASE_URL}/333", headers=headers_get)
 print(response_get.status_code)
 
-
 data_put = {
     "id": 333,
     "category": {
