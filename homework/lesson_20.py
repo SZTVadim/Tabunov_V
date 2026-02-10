@@ -50,7 +50,7 @@ data_put = {
 }
 
 headers_put = {"accept": "application/json", "Content-Type": "application/json"}
-response_put = requests.put(f"{BASE_URL}", headers=headers_put, json=data_put)
+response_put = requests.put(BASE_URL, headers=headers_put, json=data_put)
 print(response_put.status_code)
 
 headers_delete = {"accept": "application/json"}
